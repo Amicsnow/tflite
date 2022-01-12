@@ -4,8 +4,12 @@ version '1.0-SNAPSHOT'
 buildscript {
     repositories {
         google()
-        jcenter()
         mavenCentral()
+        jcenter{
+        content {
+                includeGroup "https://google.bintray.com/exoplayer/org/tensorflow/tensorflow-lite/0.0.1/tensorflow-lite-0.0.1.pom"
+            }
+        }
     }
 
     dependencies {
@@ -16,8 +20,12 @@ buildscript {
 rootProject.allprojects {
     repositories {
         google()
-        jcenter()
         mavenCentral()
+        jcenter{
+        content {
+                includeGroup "https://google.bintray.com/exoplayer/org/tensorflow/tensorflow-lite/0.0.1/tensorflow-lite-0.0.1.pom"
+            }
+        }        
     }
 }
 
